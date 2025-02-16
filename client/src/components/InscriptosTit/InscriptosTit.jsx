@@ -725,7 +725,7 @@ const InscriptosTit = () =>{
                     </div>
 
                     {/* PARTE INFERIOR DE DATOS DE TABLA */}
-                    <div className="h-[79vh] overflow-y-auto">
+                    <div className="h-[79vh]  desktop-md:h-[65vh] overflow-y-auto ">
                         <table className="border-[1px] bg-slate-50 w-full">
                             <thead>
                                 <tr className="sticky top-0 text-sm border-b-[1px] border-zinc-300 bg-zinc-200">
