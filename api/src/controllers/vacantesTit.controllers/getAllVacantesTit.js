@@ -31,6 +31,7 @@ module.exports = async(req,res)=>{
         armaquery+=` AND at2.datetime_asignacion IS NULL`;
     };
     
+    /** En INICIAL NO TIENEN EL NRO DE ESTABLECIMIENTO SEPARADO, NO SE BUSCA POR SEPARADO SI ES NUMERO EN EL CAMPO NRO_ESTABLECIMIENTO*/
     if(filtroBusqueda && filtroBusqueda!=''){
         armaquery+=` AND (LOWER(vt.nro_establecimiento) LIKE '%${filtroBusqueda.toLowerCase()}%' 
         OR LOWER(vt.nombre_establecimiento) LIKE '%${filtroBusqueda.toLowerCase()}%' 
